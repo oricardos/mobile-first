@@ -1,0 +1,26 @@
+.header,
+.header__left,
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: var(--white);
+    justify-content: space-between;
+    padding: 1.875rem;
+}
+
+.header__left,
+.header__right {
+    gap: 1rem
+}
+
+
+
+span.header__hamburguer-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/menu.svg');
+    display: inline-block; /* permite ajustes de largura / altura */
+}
