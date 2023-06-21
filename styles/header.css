@@ -9,18 +9,31 @@
     background-color: var(--white);
     justify-content: space-between;
     padding: 1.875rem;
+    position: relative;
 }
 
 .header__left,
 .header__right {
-    gap: 1rem
+    gap: 1.5rem
 }
-
-
 
 span.header__hamburguer-menu {
     width: 24px;
     height: 24px;
     background-image: url('../assets/menu.svg');
     display: inline-block; /* permite ajustes de largura / altura */
+}
+
+.header__menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+
+    background-color: #fff;
+    border-top: solid 1px #f6f6f6;
+    padding: 1rem;
+}
+
+.header__btn:checked~.header__menu-list {
+    display: block;
 }
