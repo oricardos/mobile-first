@@ -29,11 +29,30 @@ span.header__hamburguer-menu {
     position: absolute;
     top: 100%;
 
-    background-color: #fff;
-    border-top: solid 1px #f6f6f6;
-    padding: 1rem;
+    background-color: var(--white);
+    border-top: solid 1px var(--bg-color);
+}
+
+.header__btn {
+    display: none;
 }
 
 .header__btn:checked~.header__menu-list {
     display: block;
+}
+
+.menu__list-title,
+.menu__list-item {
+    padding: 1rem;
+}
+
+.menu__list-title {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.menu__item-link {
+    color: var(--blue);
+    text-transform: uppercase;
+    text-decoration: none;
 }

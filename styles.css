@@ -2,7 +2,9 @@
 
 :root {
     --bg-color: #EBECEE;
-    --white: #FFFFFF
+    --white: #FFFFFF;
+    --orange: #EB9B00;
+    --blue: #002f52;
 }
 
 body {
