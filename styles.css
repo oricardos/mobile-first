@@ -1,12 +1,17 @@
 @import url("styles/header.css");
+@import url("styles/banner.css");
 
 :root {
     --bg-color: #EBECEE;
     --white: #FFFFFF;
     --orange: #EB9B00;
     --blue: #002f52;
+    --main-font: 'Poppins';
 }
 
 body {
     background-color: var(--bg-color);
+    font-family: var(--main-font);
+    font-size: 1rem;
+    font-weight: 400;
 }
