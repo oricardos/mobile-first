@@ -1,0 +1,32 @@
+.topics {
+    background-color: var(--blue);
+    text-align: center;
+    padding: 1rem
+}
+
+.topics__title {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.topics__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.topics__item {
+    background-color: var(--orange);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.topics__link {
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .875rem;
+}
