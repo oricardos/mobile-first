@@ -130,23 +130,27 @@
       <!-- SECTION CARD -->
       <div class="card">
         <div class="card__wrapper">
-          <div class="card__description"> 
-            <h3 class="card__title">
-              Talvez você se interesse por...
-            </h3>
-            <h2 class="card__subtitle">
-              Angular11 e Firebase
-            </h2>
+          <div class="card__description">
+            <h3 class="card__title">Talvez você se interesse por...</h3>
+            <h2 class="card__subtitle">Angular11 e Firebase</h2>
             <p class="card__text">
               Construindo uma aplicação integrada com a plataforma do Google.
             </p>
           </div>
-          <img src="assets//images/angular.png" class="card__img" alt="course" />
+          <img
+            src="assets//images/angular.png"
+            class="card__img"
+            alt="course"
+          />
         </div>
         <div class="card__wrapper">
           <ul class="card__btns">
-            <li class="btn__item"><img src="assets/favorites.svg" alt="favorite"/></li>
-            <li class="btn__item"><img src="assets/shopping.svg" alt="comprar" /></li>
+            <li class="btn__item">
+              <img src="assets/favorites.svg" alt="favorite" />
+            </li>
+            <li class="btn__item">
+              <img src="assets/shopping.svg" alt="comprar" />
+            </li>
           </ul>
           <a href="#" class="btn__shopping">Saiba Mais</a>
         </div>
@@ -154,6 +158,85 @@
       <!-- END SECTION CARD -->
     </section>
     <!-- END SECTION CAROUSEL -->
+
+    <!-- SECTION MAIS VENDIDOS -->
+    <section class="carousel">
+      <h2 class="carousel__title">Mais vendidos</h2>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="/assets/books/Liderança.png" alt="Livro sobre Portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/assets/books/Guia Front-end.svg"
+              alt="Livro sobre Front-End"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/assets/books/Javascript.svg"
+              alt="Livro sobre Javascript"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/assets/books/Acessibilidade.svg"
+              alt="Livro sobre Acessibilidade"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/assets/books/ApacheKafka.svg"
+              alt="Livro sobre ApacheKafka"
+            />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- SECTION CARD -->
+      <div class="card">
+        <div class="card__wrapper">
+          <div class="card__description">
+            <img src="assets/images/Estrelinhas.png" alt="Estrelinhas">
+            <h3 class="card__title">Autora do Mês</h3>
+            <h2 class="card__subtitle">Juliana Agarikov</h2>
+            <p class="card__text">
+              Analista de Sistemas e escritora, Juliana é especialista em Front-End.
+            </p>
+          </div>
+          <img
+            src="assets//images/Perfil-escritora 1-1.png"
+            class="card__img"
+            alt="course"
+          />
+        </div>
+        <div class="card__wrapper">
+          <ul class="card__btns">
+            <li class="btn__item">
+              <img src="assets/favorites.svg" alt="favorite" />
+            </li>
+            <li class="btn__item">
+              <img src="assets/shopping.svg" alt="comprar" />
+            </li>
+          </ul>
+          <a href="#" class="btn__shopping">Saiba Mais</a>
+        </div>
+      </div>
+      <!-- END SECTION CARD -->
+    </section>
+    <!-- END SECTION MAIS VENDIDOS -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
