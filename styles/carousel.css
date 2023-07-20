@@ -21,3 +21,62 @@
     position: initial;
     margin: 0.5em 0;
 }
+
+.card {
+    background-color: var(--white);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 8px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.card__wrapper,
+.card__btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.card__title {
+    color: var(--orange);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card__subtitle {
+    color: var(--blue);
+    font-size: 1.275rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    line-height: 32px;
+}
+
+.card__text {
+    color: grey;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.card__img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.card__btns,
+.btn__shopping {
+    margin-top: 2rem;
+}
+
+.card__btns {
+    gap: 1rem
+}
+
+.btn__shopping {
+    background-color: var(--orange);
+    font-size: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    padding: 1em 2.4em;
+    border-radius: 8px;
+}

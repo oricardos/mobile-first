@@ -11,10 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    
+
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./styles.css" />
 
@@ -87,9 +87,8 @@
 
       <!-- Slider main container -->
       <div class="swiper">
-
-         <!-- If we need pagination -->
-         <div class="swiper-pagination"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -126,21 +125,46 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-
       </div>
+
+      <!-- SECTION CARD -->
+      <div class="card">
+        <div class="card__wrapper">
+          <div class="card__description"> 
+            <h3 class="card__title">
+              Talvez você se interesse por...
+            </h3>
+            <h2 class="card__subtitle">
+              Angular11 e Firebase
+            </h2>
+            <p class="card__text">
+              Construindo uma aplicação integrada com a plataforma do Google.
+            </p>
+          </div>
+          <img src="assets//images/angular.png" class="card__img" alt="course" />
+        </div>
+        <div class="card__wrapper">
+          <ul class="card__btns">
+            <li class="btn__item"><img src="assets/favorites.svg" alt="favorite"/></li>
+            <li class="btn__item"><img src="assets/shopping.svg" alt="comprar" /></li>
+          </ul>
+          <a href="#" class="btn__shopping">Saiba Mais</a>
+        </div>
+      </div>
+      <!-- END SECTION CARD -->
     </section>
+    <!-- END SECTION CAROUSEL -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+      const swiper = new Swiper(".swiper", {
         spaceBetween: 10,
         slidesPerView: 3,
         pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
+          el: ".swiper-pagination",
+          type: "bullets",
         },
-        });
-</script>
-
+      });
+    </script>
   </body>
 </html>
