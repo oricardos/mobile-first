@@ -15,6 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: space-evenly;
 }
 
 .topics__item {
@@ -46,5 +47,13 @@
 
     .topics__link {
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .topics__list {
+        width: 30%;
+        max-width: 800px;
+        margin-bottom: 2rem;
     }
 }

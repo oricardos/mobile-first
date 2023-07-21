@@ -117,3 +117,16 @@ span.header__hamburguer-menu {
         transition: .3s all ease-in-out
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+    }
+
+    .icons__text {
+        color: var(--black)
+    }
+}

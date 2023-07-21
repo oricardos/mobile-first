@@ -53,3 +53,23 @@ footer {
         font-weight: 400;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .footer__container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .links__education,
+    .links__online-education,
+    .links__community {
+        border-left: solid 1px var(--gray);
+        padding-left: 1.5rem;
+    }
+}

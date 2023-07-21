@@ -86,11 +86,13 @@
         <a href="">
           <img src="assets/favorites.svg" alt="Meus Favoritos" class="d-none" />
         </a>
-        <a href="">
+        <a href="" class="icons">
           <img src="assets/shopping.svg" alt="Sacola de compras" />
+          <p class="icons__text">Minha Sacola</p>
         </a>
-        <a href="">
+        <a href="" class="icons">
           <img src="assets/user.svg" alt="Perfil" />
+          <p class="icons__text">Meu Perfil</p>
         </a>
       </div>
     </header>
@@ -115,77 +117,82 @@
     <section class="carousel">
       <h2 class="carousel__title">Últimos Lançamentos</h2>
 
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+      <div class="carousel__container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="/assets/books/Portugol.svg" alt="Livro sobre Portugol" />
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="/assets/books/Portugol.svg"
+                alt="Livro sobre Portugol"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/books/Guia Front-end.svg"
+                alt="Livro sobre Front-End"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/books/Javascript.svg"
+                alt="Livro sobre Javascript"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/books/Acessibilidade.svg"
+                alt="Livro sobre Acessibilidade"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/books/ApacheKafka.svg"
+                alt="Livro sobre ApacheKafka"
+              />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img
-              src="/assets/books/Guia Front-end.svg"
-              alt="Livro sobre Front-End"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="/assets/books/Javascript.svg"
-              alt="Livro sobre Javascript"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="/assets/books/Acessibilidade.svg"
-              alt="Livro sobre Acessibilidade"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="/assets/books/ApacheKafka.svg"
-              alt="Livro sobre ApacheKafka"
-            />
-          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- SECTION CARD -->
+        <div class="card">
+          <div class="card__wrapper">
+            <div class="card__description">
+              <h3 class="card__title">Talvez você se interesse por...</h3>
+              <h2 class="card__subtitle">Angular11 e Firebase</h2>
+              <p class="card__text">
+                Construindo uma aplicação integrada com a plataforma do Google.
+              </p>
+            </div>
+            <img
+              src="assets//images/angular.png"
+              class="card__img"
+              alt="course"
+            />
+          </div>
+          <div class="card__wrapper">
+            <ul class="card__btns">
+              <li class="btn__item">
+                <img src="assets/favorites.svg" alt="favorite" />
+              </li>
+              <li class="btn__item">
+                <img src="assets/shopping.svg" alt="comprar" />
+              </li>
+            </ul>
+            <a href="#" class="btn__shopping">Saiba Mais</a>
+          </div>
+        </div>
+        <!-- END SECTION CARD -->
       </div>
-
-      <!-- SECTION CARD -->
-      <div class="card">
-        <div class="card__wrapper">
-          <div class="card__description">
-            <h3 class="card__title">Talvez você se interesse por...</h3>
-            <h2 class="card__subtitle">Angular11 e Firebase</h2>
-            <p class="card__text">
-              Construindo uma aplicação integrada com a plataforma do Google.
-            </p>
-          </div>
-          <img
-            src="assets//images/angular.png"
-            class="card__img"
-            alt="course"
-          />
-        </div>
-        <div class="card__wrapper">
-          <ul class="card__btns">
-            <li class="btn__item">
-              <img src="assets/favorites.svg" alt="favorite" />
-            </li>
-            <li class="btn__item">
-              <img src="assets/shopping.svg" alt="comprar" />
-            </li>
-          </ul>
-          <a href="#" class="btn__shopping">Saiba Mais</a>
-        </div>
-      </div>
-      <!-- END SECTION CARD -->
     </section>
     <!-- END SECTION CAROUSEL -->
 
@@ -193,6 +200,7 @@
     <section class="carousel">
       <h2 class="carousel__title">Mais vendidos</h2>
 
+      <div class="carousel__container">
       <!-- Slider main container -->
       <div class="swiper">
         <!-- If we need pagination -->
@@ -266,6 +274,7 @@
         </div>
       </div>
       <!-- END SECTION CARD -->
+    </div>
     </section>
     <!-- END SECTION MAIS VENDIDOS -->
 
@@ -333,74 +342,138 @@
           <ul class="links__education">
             <li class="links__title">Educação</li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/Caelum.png" alt="Caelum">
-                <span class="link__item-text">Caelum</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/Caelum.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Caelum</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/CasaDoCodigo.png" alt="Caelum">
-                <span class="link__item-text">Casa do Código</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/CasaDoCodigo.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Casa do Código</span>
             </li>
           </ul>
           <ul class="links__online-education">
             <li class="links__title">Educação Online</li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/Alura.png" alt="Caelum">
-                <span class="link__item-text">Alura</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/Alura.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Alura</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/AluraEmpresas.png" alt="Caelum">
-                <span class="link__item-text">Alura para empresas</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/AluraEmpresas.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Alura para empresas</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/AluraLatam.png" alt="Caelum">
-                <span class="link__item-text">Alura LATAM</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/AluraLatam.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Alura LATAM</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/AluraStart.png" alt="Caelum">
-                <span class="link__item-text">Alura Start</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/AluraStart.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Alura Start</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/MusicDot.png" alt="Caelum">
-                <span class="link__item-text">MusicDot</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/MusicDot.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">MusicDot</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/AluraLingua.png" alt="Caelum">
-                <span class="link__item-text">Alura Língua</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/AluraLingua.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Alura Língua</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/PM3.png" alt="Caelum">
-                <span class="link__item-text">PM3</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/PM3.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">PM3</span>
             </li>
           </ul>
           <ul class="links__community">
             <li class="links__title">Comunidade</li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/HipstersTech.png" alt="Caelum">
-                <span class="link__item-text">Hipster Ponto Tech</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/HipstersTech.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Hipster Ponto Tech</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/Scuba.png" alt="Caelum">
-                <span class="link__item-text">Scuba Dev</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/Scuba.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Scuba Dev</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/Layers.png" alt="Caelum">
-                <span class="link__item-text">Layers Ponto Tech</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/Layers.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Layers Ponto Tech</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/LikeABoss.png" alt="Caelum">
-                <span class="link__item-text">Like a Boss</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/LikeABoss.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Like a Boss</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/CarreiraSemFronteira.png" alt="Caelum">
-                <span class="link__item-text">Carreira sem Fronteira</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/CarreiraSemFronteira.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Carreira sem Fronteira</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/HipstersJobs.png" alt="Caelum">
-                <span class="link__item-text">Hipster Ponto Jobs</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/HipstersJobs.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">Hipster Ponto Jobs</span>
             </li>
             <li class="link__item">
-              <img class="link__item-img" src="assets/images/footer/GUJ.png" alt="Caelum">
-                <span class="link__item-text">GUJ</span>
+              <img
+                class="link__item-img"
+                src="assets/images/footer/GUJ.png"
+                alt="Caelum"
+              />
+              <span class="link__item-text">GUJ</span>
             </li>
           </ul>
         </div>

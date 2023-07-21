@@ -120,3 +120,27 @@
         margin: 1em auto 1.5em;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .carousel__container {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        width: 80%;
+        max-width: 1124px;
+        margin: 0 auto;
+    }
+
+    .carousel__container .swiper, .carousel__container .card {
+        flex: 1;
+    }
+
+    .swiper {
+        width: 40%;
+        margin: 1rem 0 1.5rem;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+}
