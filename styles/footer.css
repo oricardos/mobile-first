@@ -1,4 +1,55 @@
+hr {
+    margin: 0;
+}
+
 footer {
     background-color: var(--white);
-    padding: 1rem
+    padding: 2rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-none {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    h2 {
+        flex: 1;
+    }
+
+    .footer__links {
+        display: flex;
+        justify-content: space-between;
+        flex: 3;
+        gap: 4rem;
+    }
+
+    .links__title {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--gray);
+        margin-bottom: 24px;
+    }
+
+    .link__item {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .link__item:hover {
+        cursor: pointer;
+    }
+
+    .link__item-text {
+        color: var(--gray);
+        font-weight: 400;
+    }
 }
