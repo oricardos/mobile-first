@@ -30,3 +30,21 @@
     font-weight: 400;
     font-size: .875rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .topics__title {
+        font-size: 26px;
+        margin: 2rem 0;
+    }
+
+    .topics__list {
+        justify-content: space-around;
+        width: 50%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .topics__link {
+        font-size: 18px;
+    }
+}

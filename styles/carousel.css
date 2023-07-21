@@ -80,3 +80,43 @@
     padding: 1em 2.4em;
     border-radius: 8px;
 }
+
+@media screen and (min-width: 1024px) {
+    .carousel__title {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+        position: relative;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        /* position:absolute;
+        z-index: 1000; */
+        display: flex;
+        top: 60%;
+        /* right: -5%; */
+        background-color: var(--blue);
+        color: var(--white);
+        font-size: .5rem;
+        padding: 4px 12px;
+        border-radius: 50%;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 50%;
+        max-width: 588px;
+        margin: 1em auto 1.5em;
+    }
+}
