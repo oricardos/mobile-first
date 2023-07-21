@@ -8,6 +8,7 @@
 .header {
     background-color: var(--white);
     justify-content: space-between;
+    align-items: center;
     padding: 1.875rem;
     position: relative;
 }
@@ -56,4 +57,63 @@ span.header__hamburguer-menu {
     color: var(--blue);
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.logo__name {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .d-none {
+        display: none;
+    }
+
+    .logo__name {
+        display: flex;
+        font-size: 1.875rem;
+    }
+
+    .logo__name span {
+        font-weight: 700;
+    }
+
+    .menu {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .menu__item {
+        padding: 1rem;
+        background-color: var(--white);
+        color: var(--blue);
+        transition: all .3s ease-in-out;
+        text-transform: uppercase;
+    }
+
+    .menu__item:hover {
+        background-color: var(--blue);
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    .menu__link {   
+        text-decoration: none;
+        color: var(--black)
+    }
+
+    .menu__categories {
+        display: none;
+    }
+
+    .menu__categories:checked~.header__menu-list {
+        display: block;
+        border: solid 1px var(--blue);
+        transition: .3s all ease-in-out
+    }
 }

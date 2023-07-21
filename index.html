@@ -29,7 +29,7 @@
     <header class="header">
       <div class="header__left">
         <input type="checkbox" id="menu" class="header__btn" />
-        <label for="menu">
+        <label for="menu" class="d-none">
           <span class="header__hamburguer-menu"></span>
         </label>
         <ul class="header__menu-list">
@@ -51,10 +51,48 @@
           </li>
         </ul>
         <img src="assets/logo.svg" alt="logo" />
+        <h1 class="logo__name"><span>Alura</span>Books</h1>
       </div>
+
+      <ul class="menu">
+        <input
+          type="checkbox"
+          id="menu-categories"
+          class="menu__categories"
+        />
+        <label for="menu-categories">
+          <li class="menu__item">
+            Categorias
+          </li>
+        </label>
+
+        <ul class="header__menu-list">
+          <li class="menu__list-item">
+            <a href="#" class="menu__item-link">Programação</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__item-link">Front-End</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__item-link">Infraestrutura</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__item-link">Business</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__item-link">Design & UX</a>
+          </li>
+        </ul>
+
+        <li class="menu__item">Favoritos</li>
+        <li class="menu__item">
+          Minha Estante
+        </li>
+      </ul>
+
       <div class="header__right">
         <a href="">
-          <img src="assets/favorites.svg" alt="Meus Favoritos" />
+          <img src="assets/favorites.svg" alt="Meus Favoritos" class="d-none" />
         </a>
         <a href="">
           <img src="assets/shopping.svg" alt="Sacola de compras" />
@@ -209,11 +247,12 @@
       <div class="card">
         <div class="card__wrapper">
           <div class="card__description">
-            <img src="assets/images/Estrelinhas.png" alt="Estrelinhas">
+            <img src="assets/images/Estrelinhas.png" alt="Estrelinhas" />
             <h3 class="card__title">Autora do Mês</h3>
             <h2 class="card__subtitle">Juliana Agarikov</h2>
             <p class="card__text">
-              Analista de Sistemas e escritora, Juliana é especialista em Front-End.
+              Analista de Sistemas e escritora, Juliana é especialista em
+              Front-End.
             </p>
           </div>
           <img
@@ -274,13 +313,19 @@
     <!-- END SECTION TÓPICOS -->
 
     <!-- SECTION CONTATO -->
-        <section class="contact">
-          <h2 class="contact__title">
-            Fique por dentro das novidades!
-          </h2>
-          <p class="contact__text">Atualizações de e-books, novos livros, promoções e outros.</p>
-          <input type="email" name="" id="" placeholder="Cadastre seu email" class="contact__email">
-        </section>
+    <section class="contact">
+      <h2 class="contact__title">Fique por dentro das novidades!</h2>
+      <p class="contact__text">
+        Atualizações de e-books, novos livros, promoções e outros.
+      </p>
+      <input
+        type="email"
+        name=""
+        id=""
+        placeholder="Cadastre seu email"
+        class="contact__email"
+      />
+    </section>
     <!-- END SECTION CONTATO -->
 
     <hr />
