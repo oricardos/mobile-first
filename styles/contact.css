@@ -1,0 +1,33 @@
+.contact {
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+.contact__title {
+    font-size: 1.125rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.contact__text {
+    font-size: 1rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.contact__email {
+    padding: 1rem;
+    border: solid 1px var(--blue);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--blue)
+}
+
+.contact__email::placeholder {
+    font-family: var(--main-font);
+    color: var(--blue);
+    background: url('../assets/email.svg') no-repeat;
+    padding-left: 2em;
+}
